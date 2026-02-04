@@ -1,20 +1,15 @@
 {
   "name": "flashcard-app",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "cors": "^2.8.6",
-    "dotenv": "^17.2.3",
-    "express": "^5.2.1",
-    "express-async-errors": "^3.1.1",
-    "express-mongo-sanitize": "^2.2.0",
-    "express-rate-limit": "^8.2.1",
-    "helmet": "^8.1.0",
-    "mongoose": "^9.1.5",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "xss-clean": "^0.1.4"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -38,12 +33,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "nodemon": "^3.1.11",
-    "web-vitals": "^2.1.4"
   }
 }
