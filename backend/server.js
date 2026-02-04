@@ -139,7 +139,7 @@ app.use((req, res) => {
     success: false,
     message: `Route not found: ${req.method} ${req.originalUrl}`
   });
-});
+}); 
 
 const PORT = process.env.PORT || 5000;
 
