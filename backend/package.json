@@ -18,5 +18,8 @@
     "express-rate-limit": "^8.2.1",
     "helmet": "^8.1.0",
     "mongoose": "^9.1.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
   }
 }
