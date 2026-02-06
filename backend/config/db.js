@@ -8,6 +8,7 @@ const connectDB = async () => {
 
     } catch(error){
         console.error(`Error: ${error.message}`)
+        // It immediately stops the Node.js application.
         process.exit(1);
     }
 }
