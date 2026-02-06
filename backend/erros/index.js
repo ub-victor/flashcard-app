@@ -20,3 +20,7 @@ class NotFoundError extends CustomAPIError{
         this.name = 'NotFounddError'
     }
 }
+
+class ValidationError extends CustomAPIError{
+    constructor(message);
+}
