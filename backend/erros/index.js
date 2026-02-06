@@ -33,5 +33,10 @@ class DuplicateKeyError extends CustomAPIError {
     constructor(message){
         super(message);
         this.statusCode =409;
+        this.name = 'DuplicateKeyError'
     }
+}
+
+module.exports = {
+    
 }
