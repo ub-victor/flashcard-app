@@ -13,3 +13,8 @@ class BadRequestError extends CustomAPIError{
     }
 }
 
+class NotFoundError extends CustomAPIError{
+    constructor(message){
+        super(message);
+    }
+}
