@@ -38,5 +38,7 @@ class DuplicateKeyError extends CustomAPIError {
 }
 
 module.exports = {
-    
+    CustomAPIError,
+    BadRequestError,
+    NotFoundError,
 }
