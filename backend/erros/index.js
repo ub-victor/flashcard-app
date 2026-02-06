@@ -1,5 +1,5 @@
 // Custom Error Classes
-class CustomAPIError extends Error{
+class CustomAPIError extends Error{ //Error has 3 properties: Name, Message and Stack
     constructor(message){
         super(message)
     }
