@@ -24,5 +24,13 @@ class NotFoundError extends CustomAPIError{
 class ValidationError extends CustomAPIError{
     constructor(message){
         super(message);
+        this.statusCode = 400;
+        this.name = 'ValideationError'
+    }
+}
+
+class DuplicateKeyError extends CustomAPIError {
+    constructor(message){
+        super(message);
     }
 }
