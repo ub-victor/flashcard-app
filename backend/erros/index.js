@@ -32,5 +32,6 @@ class ValidationError extends CustomAPIError{
 class DuplicateKeyError extends CustomAPIError {
     constructor(message){
         super(message);
+        this.statusCode =409;
     }
 }
