@@ -22,5 +22,7 @@ class NotFoundError extends CustomAPIError{
 }
 
 class ValidationError extends CustomAPIError{
-    constructor(message);
+    constructor(message){
+        
+    }
 }
