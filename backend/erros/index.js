@@ -46,3 +46,12 @@ module.exports = {
     ValidationError,
     DuplicateKeyError
 };
+
+/*
+HTTP status code.
+
+Code	Meaning
+400	    Bad request
+404	    Not found
+409	    Conflict
+*/
