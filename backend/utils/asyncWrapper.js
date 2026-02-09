@@ -7,5 +7,5 @@ const asyncWrapper = (fn)=> {
         }catch(error){
             next(error)
         }
-    }
-}
+    };
+};
