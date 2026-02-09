@@ -6,7 +6,7 @@ class CustomAPIError extends Error{ //Error has 3 properties: Name, Message and 
     }
 }
 
-class BadRequestError extends CustomAPIError{
+class BadRequestError extends CustomAPIError{ 
     constructor(message){
         super(message);
         this.statusCode = 400;
