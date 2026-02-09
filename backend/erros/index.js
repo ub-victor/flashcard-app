@@ -1,6 +1,7 @@
 // Custom Error Classes
 class CustomAPIError extends Error{ //Error has 3 properties: Name, Message and Stack
-    // new CustomAPIError("Wrong input")
+    // new CustomAPIError("Wrong input") = message = "Wrong input"
+
     constructor(message){
         super(message)
     }
