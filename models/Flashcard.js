@@ -74,6 +74,12 @@ flashcardSchema.post('save', function(error, doc, next) { // post('sava') means:
             question: { message: "Please provide a question" },
             answer: { message: "Please provide an answer" }
         }
+            Object.values() extracts values:
+            [
+                { message: "Please provide a question" },
+                { message: "Please provide an answer" }
+            ]
+
         */
         const errors = Object.values(error.errors).map(err => err.message);
     
