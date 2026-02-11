@@ -64,6 +64,7 @@ flashcardSchema.index({ category: 1, isMastered: 1 }); // 1 means ascending orde
 flashcardSchema.index({ createdAt: -1 }); // Creates index sorted by newest first.
 
 // Middleware to handle validation errors
+// Run this function after saving a document.
 flashcardSchema.post('save', function(error, doc, next) {
     if (error.name === 'ValidationError') {
         const errors = Object.values(error.errors).map(err => err.message);
