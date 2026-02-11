@@ -89,7 +89,7 @@ flashcardSchema.post('save', function(error, doc, next) { // post('save') means:
 
         */
         const errors = Object.values(error.errors).map(err => err.message);
-    
+        // Then pass new error to next middleware.
         next(new mongoose.Error.ValidationError(errors.join(', ')));
     } else if (error.code === 11000) {
         next(new mongoose.Error('Duplicate key error'));
