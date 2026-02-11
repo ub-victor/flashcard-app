@@ -49,5 +49,7 @@ const flashcardSchema = new mongoose.Schema({
         default: 'User'
     }
 }, {
-    timestamps: true
+    timestamps: true,
+    toJSON: {virtuals: true},
+    
 });
