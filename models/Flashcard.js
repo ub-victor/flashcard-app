@@ -28,6 +28,7 @@ const flashcardSchema = new mongoose.Schema({
     },
     isMastered: {
         type: String,
-        enum: ['easy', 'medium', 'hard']
+        enum: ['easy', 'medium', 'hard'],
+        default: 'medium'
     }  
 })
