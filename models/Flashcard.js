@@ -51,7 +51,7 @@ const flashcardSchema = new mongoose.Schema({
         type: String,
         default: 'User'
     }
-}, { // Schema Option second Arguments with purpose of Automatic date,
+}, { // Schema Option second Arguments with purpose of Automatic date,plus include computer fields when sending data
     timestamps: true, //Mongoose automatically adds two fields to this document: createdAt, updatedAt
     toJSON: { virtuals: true }, // include virtual fields when converting to JSON.
     toObject: { virtuals: true }
