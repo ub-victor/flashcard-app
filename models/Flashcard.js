@@ -12,5 +12,7 @@ const flashcardSchema = new mongoose.Schema({
     answer: {
         type: String,
         required: [true, 'please provide an answer'],
+        trim: true,
+        minlength: [3, 'Answer must be at lest 3 characters']
     }
 })
