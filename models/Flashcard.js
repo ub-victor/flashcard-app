@@ -19,5 +19,6 @@ const flashcardSchema = new mongoose.Schema({
     category: {
         type: String,
         default: 'General',
+        trim: true
     }
 })
