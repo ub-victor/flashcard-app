@@ -91,7 +91,7 @@ flashcardSchema.post('save', function(error, doc, next) { // post('save') means:
         const errors = Object.values(error.errors).map(err => err.message);
         // Then pass new error to next middleware. This makes error cleaner for API response
         next(new mongoose.Error.ValidationError(errors.join(', ')));
-    } else if (error.code === 11000) {
+    } else if (error.code === 11000) { //  error.code === 11000 = MongoDB duplicate key error. eg: unique email already exists.
         next(new mongoose.Error('Duplicate key error'));
     } else {
         next(error);
