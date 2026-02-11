@@ -50,6 +50,7 @@ const flashcardSchema = new mongoose.Schema({
     }
 },{
     timestamps: true,
-    tooJSON: { virtuals: true}
+    tooJSON: { virtuals: true},
+
 }
-})
+})l
