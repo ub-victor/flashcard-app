@@ -5,6 +5,8 @@ const flashcardSchema = new mongoose.Schema({
     question: {
         type: String,
         require: [true, 'Please provide a question'],
-        trim: true
+        trim: true,
+        minlength: 
+
     }
 })
