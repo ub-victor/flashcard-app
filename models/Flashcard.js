@@ -37,6 +37,6 @@ const flashcardSchema = new mongoose.Schema({
     },
     lastReviewed: {
         type: Date,
-        
+        default: Data.now
     }
 })
