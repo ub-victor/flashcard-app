@@ -58,9 +58,10 @@ const flashcardSchema = new mongoose.Schema({
 });
 
 // Index for better query performance/ it like a book without the below indexes we can read every page to find a word, but here we jump directly  to page
-//
-flashcardSchema.index({ category: 1, isMastered: 1 });
-flashcardSchema.index({ createdAt: -1 });
+//MongoDB index works the same way.
+
+flashcardSchema.index({ category: 1, isMastered: 1 }); // 1 means ascending order
+flashcardSchema.index({ createdAt: -1 }); // Creates index sorted by newest first.
 
 // Middleware to handle validation errors
 flashcardSchema.post('save', function(error, doc, next) {
