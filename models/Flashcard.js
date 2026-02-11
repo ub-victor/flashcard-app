@@ -68,7 +68,13 @@ flashcardSchema.index({ createdAt: -1 }); // Creates index sorted by newest firs
 flashcardSchema.post('save', function(error, doc, next) { // post('sava') means: document.save() -> this middleware, and doc = saved document
     if (error.name === 'ValidationError') { // Mongoose automatically create an error when required field missing or min and max length failed
 
-        
+        /* 
+        error.errors looks like this:
+        {
+            question: { message: "Please provide a question" },
+            answer: { message: "Please provide an answer" }
+        }
+        */
         const errors = Object.values(error.errors).map(err => err.message);
     
         next(new mongoose.Error.ValidationError(errors.join(', ')));
