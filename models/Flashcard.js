@@ -51,7 +51,7 @@ const flashcardSchema = new mongoose.Schema({
         type: String,
         default: 'User'
     }
-}, {
+}, { // Schema Option second Arguments
     timestamps: true,
     toJSON: { virtuals: true },
     toObject: { virtuals: true }
