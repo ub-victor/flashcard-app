@@ -84,7 +84,7 @@ flashcardSchema.post('save', function(error, doc, next) { // post('save') means:
             [
                 "Please provide a question",
                 "Please provide an answer"
-            ]
+            ] 
 
 
         */
