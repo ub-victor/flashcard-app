@@ -27,6 +27,7 @@ const flashcardSchema = new mongoose.Schema({
         trim: true
     },
     isMastered: {
-        
-    }  
+        type: Boolean,
+        default: false
+    }
 })
