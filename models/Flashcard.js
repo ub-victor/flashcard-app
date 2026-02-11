@@ -52,7 +52,7 @@ const flashcardSchema = new mongoose.Schema({
         default: 'User'
     }
 }, { // Schema Option second Arguments0
-    timestamps: true, //Mongoose automatically adds two fields to this document:
+    timestamps: true, //Mongoose automatically adds two fields to this document: createdAt, updatedAt
     toJSON: { virtuals: true },
     toObject: { virtuals: true }
 });
