@@ -80,6 +80,13 @@ flashcardSchema.post('save', function(error, doc, next) { // post('save') means:
                 { message: "Please provide an answer" }
             ]
 
+            .map(err => err.message);
+            [
+                "Please provide a question",
+                "Please provide an answer"
+            ]
+
+
         */
         const errors = Object.values(error.errors).map(err => err.message);
     
