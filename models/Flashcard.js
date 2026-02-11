@@ -57,7 +57,7 @@ const flashcardSchema = new mongoose.Schema({
     toObject: { virtuals: true }
 });
 
-// Index for better query performance/ it like a book without the below indexes we can read every page to find a word, but here we jump directly  to page
+// Index for better query performance/ it like a book without the below indexes we can read every page to find a word, but here we jump directly  to page 
 //
 flashcardSchema.index({ category: 1, isMastered: 1 });
 flashcardSchema.index({ createdAt: -1 });
