@@ -65,7 +65,7 @@ flashcardSchema.index({ createdAt: -1 }); // Creates index sorted by newest firs
 
 // Middleware to handle validation errors
 // Run this function after saving a document.
-flashcardSchema.post('save', function(error, doc, next) { // post('sava') means: document.save() -> this middleware, and doc = saved document
+flashcardSchema.post('save', function(error, doc, next) { // post('save') means: document.save() -> this middleware, and doc = saved document
     if (error.name === 'ValidationError') { // Mongoose automatically create an error when required field missing or min and max length failed
 
         /* 
