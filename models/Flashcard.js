@@ -44,12 +44,10 @@ const flashcardSchema = new mongoose.Schema({
         type: Number,
         default: 0
     },
-     createdBy: {
+    createBy: {
         type: String,
         default: 'User'
     }
-}, {
-    timestamps: true,
-    toJSON: { virtuals: true },
-    toObject: { virtuals: true }
+},{
+
 });
