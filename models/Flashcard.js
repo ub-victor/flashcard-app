@@ -11,6 +11,6 @@ const flashcardSchema = new mongoose.Schema({
     },
     answer: {
         type: String,
-        require
+        required: [true, 'please provide an answer'],
     }
 })
