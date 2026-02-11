@@ -53,7 +53,7 @@ const flashcardSchema = new mongoose.Schema({
     }
 }, { // Schema Option second Arguments0
     timestamps: true, //Mongoose automatically adds two fields to this document: createdAt, updatedAt
-    toJSON: { virtuals: true },
+    toJSON: { virtuals: true }, // include virtual fields when converting to JSON.
     toObject: { virtuals: true }
 });
 
