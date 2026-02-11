@@ -8,6 +8,5 @@ const flashcardSchema = new mongoose.Schema({
         trim: true,
         minlength: [3, 'Question must be at least 3 characters'],
         maxlength: [500, 'Question cannot exceed 500 chararacters']
-
     }
 })
