@@ -1,3 +1,4 @@
+const { create } = require('domain');
 const mongoose = require('mongoose');
 const { type } = require('os');
 
@@ -42,5 +43,9 @@ const flashcardSchema = new mongoose.Schema({
     reviewCount: {
         type: Number,
         default: 0
+    },
+    createBy: {
+        type: String,
+        default: 'User'
     }
 })
