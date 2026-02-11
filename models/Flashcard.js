@@ -1,31 +1,3 @@
-/**
- * Flashcard Schema Definition
- * 
- * Defines the structure and validation rules for flashcard documents in MongoDB.
- * Includes automatic timestamps, virtual field support, and indexing for optimized queries.
- * 
- * @typedef {Object} Flashcard
- * @property {string} question - The question text (required, 3-500 characters)
- * @property {string} answer - The answer text (required, 3-1000 characters)
- * @property {string} [category='General'] - Category classification for organization
- * @property {string} [imageUrl=''] - URL to an associated image
- * @property {string} [imageAlt=''] - Alt text for accessibility
- * @property {boolean} [isMastered=false] - Flag indicating if flashcard is mastered
- * @property {('easy'|'medium'|'hard')} [difficulty='medium'] - Difficulty level
- * @property {Date} [lastReviewed=Date.now] - Timestamp of last review
- * @property {number} [reviewCount=0] - Total number of times reviewed
- * @property {string} [createdBy='User'] - Creator identifier
- * @property {Date} createdAt - Auto-generated creation timestamp
- * @property {Date} updatedAt - Auto-generated last update timestamp
- * 
- * @description
- * - Automatically maintains `createdAt` and `updatedAt` timestamps
- * - Includes compound index on (category, isMastered) for efficient filtering
- * - Includes index on createdAt (descending) for chronological queries
- * - Post-save middleware handles validation and duplicate key errors
- * 
- * @returns {Model} Mongoose model for Flashcard collection
- */
 const mongoose = require('mongoose');
 
 const flashcardSchema = new mongoose.Schema({
