@@ -48,9 +48,5 @@ const flashcardSchema = new mongoose.Schema({
         type: String,
         default: 'User'
     }
-},{
-    timestamps: true,
-    tooJSON: { virtuals: true},
 
-}
-})l
+});
