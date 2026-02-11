@@ -36,6 +36,7 @@ const flashcardSchema = new mongoose.Schema({
         default: 'medium'
     },
     lastReviewed: {
+        type: Date,
         
     }
 })
