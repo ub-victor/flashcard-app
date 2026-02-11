@@ -56,3 +56,4 @@ const flashcardSchema = new mongoose.Schema({
 
 // Index for better query performance
 flashcardSchema.index({category: 1, isMastered: 1});
+flashcardSchema.index({createdAt: -1});
