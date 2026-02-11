@@ -53,3 +53,6 @@ const flashcardSchema = new mongoose.Schema({
     toJSON: {virtuals: true},
     toObject: { virtuals: true}
 });
+
+// Index for better query performance
+flashcardSchema.index({category: 1, isMastered: 1});
