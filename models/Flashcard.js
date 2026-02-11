@@ -20,5 +20,6 @@ const flashcardSchema = new mongoose.Schema({
         type: String,
         default: 'General',
         trim: true
-    }
+    },
+    imageUrl
 })
