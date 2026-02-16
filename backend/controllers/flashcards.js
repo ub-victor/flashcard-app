@@ -23,5 +23,7 @@ const getAllFlashcards = asyncWrapper(async(req, res)=>{
                 sort[field] = 1;
             }
         });
-    } 
+    } else {
+        sort.createdAt = -1;
+    }
 });
