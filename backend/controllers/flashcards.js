@@ -8,5 +8,5 @@ const {BadResquestError, NotFoundError, ValidationError, DuplicateKeyError} = re
 // @access Public 
 
 const getAllFlashcards = asyncWrapper(async(req, res)=>{
-    
+    const page = parseInt(req.query.page) || 1; 
 });
