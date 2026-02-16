@@ -34,4 +34,12 @@ const getAllFlashcards = asyncWrapper(async(req, res)=>{
 
     const total = await Flashcard.countDocuments(filter);
     const totalPages = Math.ceil(total/ limit);
+
+    res.status(200).json({
+        success: true,
+        count: flashcards.length,
+        total,
+        currentPage: page,
+        data: flashcards
+    });
 });
