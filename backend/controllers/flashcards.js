@@ -20,7 +20,7 @@ const getAllFlashcards = asyncWrapper(async(req, res)=>{
             if (field.startsWith('-')){
                 sort[field.substring(1)] = -1;
             }else {
-                
+                sort[field] = 1;
             }
         });
     } 
