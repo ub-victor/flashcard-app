@@ -3,3 +3,5 @@ const asyncWrapper = require('../utils/asyncWrapper'); // to eliminate try/catch
 const {BadResquestError, NotFoundError, ValidationError, DuplicateKeyError} = require('../erros');
 
 
+// @desc Get all flashcards with pagination
+// @route  GET /api/flashcards
