@@ -16,6 +16,6 @@ const getAllFlashcards = asyncWrapper(async(req, res)=>{
     const filter= {};
     if(req.query.sort){
         const sortFields = req.query.sort.split(',');
-        sortFields.forEach(field)
+        sortFields.forEach(field);
     } 
 });
