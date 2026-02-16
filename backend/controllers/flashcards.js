@@ -26,4 +26,9 @@ const getAllFlashcards = asyncWrapper(async(req, res)=>{
     } else {
         sort.createdAt = -1;
     }
+
+    const flashcards = await Flashcard.find(filter)
+        .skip(skip)
+        .limit(limit)
+        .sort(sort);
 });
