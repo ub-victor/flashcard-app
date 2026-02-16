@@ -1,2 +1,2 @@
-const Flashcard = require('../models/Flashcard')
+const Flashcard = require('')
 const asyncWrapper = require('../')
