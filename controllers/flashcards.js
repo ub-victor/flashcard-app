@@ -1,1 +1,1 @@
-const
+const Flashcard = require('../models/Flashcard')
