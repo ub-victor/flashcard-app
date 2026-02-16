@@ -33,4 +33,5 @@ const getAllFlashcards = asyncWrapper(async(req, res)=>{
         .sort(sort);
 
     const total = await Flashcard.countDocuments(filter);
+    const totalPages = Math.ceil(total/ limit);
 });
